@@ -1,0 +1,26 @@
+<!DOCTYPE HTML>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+   
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body>
+
+<h1>FindAll Employees</h1>
+
+<table>
+<tr>
+<th> Employee Id</th>
+<th> Employee Name</th>
+<th> Employee Salary</th>
+</tr>
+<tr th:each ="emp : ${emps}">
+<td th:text  =" ${emp.eid}"> </td>
+<td th:text  =" ${emp.ename}"> </td>
+<td th:text  =" ${emp.esal}"> </td>
+</tr>
+</table>
+</body>
+</html>
